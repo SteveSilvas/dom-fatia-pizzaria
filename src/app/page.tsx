@@ -5,11 +5,9 @@ import HomePage from "./screens/Homepage";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <HomePage/>
-      <Footer />
-    </>
+    <main className="w-screen">
+      <HomePage />
+    </main>
   );
 }
 

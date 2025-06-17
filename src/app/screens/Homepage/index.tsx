@@ -16,12 +16,12 @@ const HomePage = () => {
                 className="-z-10 scale-x-[-1] w-full h-auto object-cover"
             />
             <div className="p-10 rounded-2xl ml-10 z-10">
-                <h1 className="w-full text-3xl md:text-6xl font-bold text-amber-500">A pizza que voce precisa!</h1>
+                <h1 className="md:w-2/3 text-3xl md:text-6xl font-bold text-amber-500">A pizza que voce precisa!</h1>
                 <p className="mt-10 text-lg text-white">A melhor pizza de Cotia!</p>
 
                 <nav className="md-10 md:mt-6 flex flex-col gap-4">
                     <Link
-                        href="screens/Menu/"
+                        href="/screens/Menu/"
                         className="w-40 text-center hover:scale-115 transition-all duration-300 ease-in-out text-white py-2 px-4 rounded-4xl border-2 border-amber-500 cursor-pointer">
                         <TbListDetails className="inline-block mr-2" />
                         Cardápio
@@ -29,7 +29,7 @@ const HomePage = () => {
                     <Link
                         href="https://api.whatsapp.com/send?phone=5511966105821"
                         target="_blank"
-                        className="w-40 text-center hover:scale-115 transition-all duration-300 ease-in-out text-white py-2 px-4 rounded-4xl border-2 border-amber-500 cursor-pointer">
+                        className="w-40 text-center hover:scale-115 transition-all duration-300 ease-in-out py-2 px-4 text-white rounded-4xl border-2 border-amber-500 cursor-pointer">
                         <BsWhatsapp className="inline-block mr-2" />
                         Peça Já
                     </Link>
