@@ -13,9 +13,9 @@ const Navbar: React.FC = () => {
 
     return (
         <div
-            className={`${isOpen ? "h-screen" : "h-0"} md:h-auto  bg-white text-black flex flex-col md:flex-row align-center items-center md:p-1`}
+            className={`${isOpen ? "h-screen" : "h-0"} md:h-auto bg-white text-zinc-800 flex flex-col md:flex-row align-center items-center md:p-1`}
         >
-            <div className="flex justify-center md:justify-start items-center relative w-full md:w-auto p-4 md:p-0">
+            <div className="w-full md:w-auto bg-zinc-900/50 min-h-13 flex justify-center md:justify-start items-center relative  p-4 md:p-0">
                 {isOpen ? <GrClose
                     className="cursor-pointer absolute right-4 md:hidden"
                     onClick={toggleSidebar} /> :
@@ -26,29 +26,29 @@ const Navbar: React.FC = () => {
             </div>
             <nav className="w-[100%] h-[100%] text-[18px] md:h-auto flex flex-col md:flex-row align-center items-center justify-center md:justify-end gap-10">
                 <Link
-                    className={`hover:text-blue_d font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
+                    className={`hover:text-zinc-500 font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
                     href={"/"}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     Inicio
                 </Link>
                 <Link
-                    className={`hover:text-blue_d font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
-                    href={"/#planos"}
+                    className={`hover:text-zinc-500 font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
+                    href={"/#about"}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     Sobre
                 </Link>
                 <Link
-                    className={`hover:text-blue_d font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
+                    className={`hover:text-zinc-500 font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
                     href={"/screens/Menu"}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     Cardápio
                 </Link>
                 <Link
-                    className={`hover:text-blue_d font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
-                    href={"/#contato"}
+                    className={`hover:text-zinc-500 font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
+                    href={"/#contact"}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     Contato
