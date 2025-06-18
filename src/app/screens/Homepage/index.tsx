@@ -2,7 +2,6 @@ import Image from "next/image";
 import home_pizza_background from "@/assets/vista-de-uma-refeicao-deliciosa-pronta-para-comer.jpg";
 import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { TbListDetails } from "react-icons/tb";
 import PageTemplate from "@/components/PageTemplate";
 

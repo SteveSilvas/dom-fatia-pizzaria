@@ -7,7 +7,7 @@ import Contact from "./screens/Contact";
 
 export default function Home() {
   return (
-    <main className="w-screen">
+    <main className="w-full">
       <HomePage />
       <About />
       <Contact />
