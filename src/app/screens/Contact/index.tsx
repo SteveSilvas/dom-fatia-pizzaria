@@ -4,7 +4,10 @@ import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 const Contact = () => {
     return (
-        <PageTemplate id="contact" className="bg-[#020202]">
+        <PageTemplate
+            height="h-auto"
+            id="contact"
+            className="bg-[#020202]">
             <h1 className="mt-6 text-3xl font-bold text-zinc-300">Entre em Contato conosco</h1>
             <div className="flex flex-col gap-4 my-4">
                 <Link
