@@ -1,8 +1,10 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { GrClose, GrMenu } from "react-icons/gr";
+import logotipo from "@/assets/logotipo.jpeg";
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +26,20 @@ const Navbar: React.FC = () => {
                         onClick={toggleSidebar}
                     />}
             </div>
+            <Link
+                className={`hover:text-zinc-500 font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
+                href={"/"}
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                <Image
+                    src={logotipo}
+                    alt="Vercel Logo"
+                    width={200}
+                    height={200}
+                    className={`h-40 md:h-15 w-auto mt-4 md:mt-0 ${!isOpen ? "hidden md:block" : ""}`}
+                />
+            </Link>
+
             <nav className="w-[100%] h-[100%] text-[18px] md:h-auto flex flex-col md:flex-row align-center items-center justify-center md:justify-end gap-10">
                 <Link
                     className={`hover:text-zinc-500 font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
@@ -54,7 +70,7 @@ const Navbar: React.FC = () => {
                     Contato
                 </Link>
 
-                 <Link
+                <Link
                     className={`hover:text-zinc-500 font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
                     href={"/#address"}
                     onClick={() => setIsOpen(!isOpen)}
