@@ -3,7 +3,10 @@ import Image from "next/image";
 import about_pizza_background from "@/assets/freepik_assistant_1750243451880.png";
 const About = () => {
     return (
-        <PageTemplate id="about" className="flex flex-col md:flex-row bg-white">
+        <PageTemplate
+            height="min-h-auto"
+            id="about"
+            className="flex flex-col md:flex-row bg-white">
             <section className="relative w-full md:w-1/2 md:h-96 py-4 px-10">
                 <h1 className="mt-6 text-3xl font-bold text-zinc-800">Sobre a Dom Fatia Pizzaria</h1>
                 <p className="mt-4 text-lg text-zinc-600">
