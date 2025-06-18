@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import home_pizza_background from "@/assets/vista-de-uma-refeicao-deliciosa-pronta-para-comer.jpg";
 import Link from "next/link";
@@ -13,9 +14,7 @@ const HomePage = () => {
             <Image
                 src={home_pizza_background}
                 alt="Pizza Background"
-                layout="fill"
-                objectFit="cover"
-                className="-z-10 scale-x-[-1] w-full h-auto object-cover"
+                className="-z-10 scale-x-[-1] w-full object-cover absolute h-screen"
             />
             <div className="p-10 rounded-2xl z-10">
                 <h1 className="md:w-2/3 text-3xl md:text-6xl font-bold text-amber-500">A pizza que você precisa!</h1>
