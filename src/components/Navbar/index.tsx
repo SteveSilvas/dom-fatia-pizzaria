@@ -53,6 +53,15 @@ const Navbar: React.FC = () => {
                 >
                     Contato
                 </Link>
+
+                 <Link
+                    className={`hover:text-zinc-500 font-bold font-default ${!isOpen ? "hidden md:block" : ""}`}
+                    href={"/#address"}
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    Endereço
+                </Link>
+
                 <Link
                     href="https://api.whatsapp.com/send?phone=5511966105821"
                     target="_blank"
