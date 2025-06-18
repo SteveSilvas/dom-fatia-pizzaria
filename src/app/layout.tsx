@@ -26,7 +26,7 @@ export default function RootLayout({
         <header className="w-full fixed top-0 left-0 z-50">
           <Navbar />
         </header>
-        <main className="flex-grow w-full">
+        <main className="flex-grow w-full mt-13 md:mt-15">
           {children}
         </main>
         <Footer />

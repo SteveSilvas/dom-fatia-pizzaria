@@ -2,11 +2,15 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import HomePage from "./screens/Homepage";
+import About from "./screens/About";
+import Contact from "./screens/Contact";
 
 export default function Home() {
   return (
     <main className="w-screen">
       <HomePage />
+      <About />
+      <Contact />
     </main>
   );
 }
