@@ -17,12 +17,11 @@ const Footer = () => {
 
             <div className="flex flex-col gap-4">
                 <strong className="text-white text-lg">Horário de Atendimento</strong>
-                <span className="text-zinc-300">Dom à Qui - 18h às 23:45h</span>
-                <span className="text-zinc-300">Sex e Sab - 18h às 00:30h</span>
+                <span className="text-zinc-300">Terça à domingo</span>
+                <span className="text-zinc-300">das 18h às 23h</span>
             </div>
 
             <div className="flex flex-col gap-4">
-
                 <strong className="text-white text-lg">Contato</strong>
                 <Link
                     className="flex items-center gap-2 text-zinc-300 hover:text-amber-500 cursor-pointer"
@@ -34,20 +33,21 @@ const Footer = () => {
                 </Link>
                 <Link
                     className="flex items-center gap-2 text-zinc-300 hover:text-amber-500 cursor-pointer"
-                    href="https://www.instagram.com/restaurante_exemplo"
+                    href="https://www.instagram.com/domfatiapizzaria/?igsh=YXAza244MWFmeWUx&utm_source=qr#"
                     target="_blank"
                 >
                     <BsInstagram className="inline text-2xl" />
-                    <span>@restaurante_exemplo</span>
+                    <span>@domfatiapizzaria</span>
                 </Link>
             </div>
 
-            <div>
-                <button
-                    className="bg-amber-500 text-white py-2 px-4 rounded hover:bg-amber-600 cursor-pointer">
-                    Fazer Pedido
-                </button>
-            </div>
+            <Link
+                href="https://api.whatsapp.com/send?phone=5511966105821"
+                target="_blank"
+                className={`w-40 text-center hover:scale-105 transition-all duration-300 ease-in-out text-zinc-300 py-1 px-4 rounded-4xl border-2 border-amber-500 cursor-pointer`}>
+                <BsWhatsapp className="inline-block mr-2" />
+                Peça Já
+            </Link>
         </footer>
     );
 };
