@@ -24,6 +24,9 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${openSans.variable} font-sans flex flex-col min-h-screen`}>
         <header className="w-full fixed top-0 left-0 z-50">
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossOrigin="" />
           <Navbar />
         </header>
         <main className="flex-grow w-full mt-13 md:mt-15">
