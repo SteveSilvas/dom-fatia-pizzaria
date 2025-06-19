@@ -22,7 +22,7 @@ const Address = () => {
                 </div>
             </section>
 
-            <Map />
+            {/* <Map /> */}
 
         </PageTemplate>
     );
