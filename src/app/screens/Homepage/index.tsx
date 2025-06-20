@@ -17,8 +17,10 @@ const HomePage = () => {
                 className="-z-10 scale-x-[-1] w-full object-cover absolute h-screen"
             />
             <div className="p-10 rounded-2xl z-10">
-                <h1 className="md:w-2/3 text-3xl md:text-6xl font-bold text-amber-500">A pizza que você precisa!</h1>
-                <p className="mt-6 text-lg text-white">A melhor pizza de Cotia!</p>
+                <h1 className="md:w-2/3 text-3xl md:text-6xl font-bold text-amber-500">
+                    Grande no nome. Gigante no sabor!
+                </h1>
+                <p className="mt-6 text-lg text-white">A pizza número 1 de Cotia!</p>
 
                 <nav className="mt-10 flex flex-col items-center md:items-start gap-4">
                     <Link

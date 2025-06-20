@@ -3,7 +3,7 @@ export interface IPageTitleProps {
 }
 const PageTitle: React.FC<IPageTitleProps> = ({ children }) => {
     return (
-        <h1 className="text-3xl font-bold text-zinc-800 dark:text-amber-500">
+        <h1 className="my-6 text-3xl font-bold text-zinc-800 dark:text-amber-500">
             {children}
         </h1>
     );
