@@ -9,7 +9,7 @@ export default function Home() {
     <main className="w-full">
       <HomePage />
       <About />
-      <Promotions />
+      {/* <Promotions /> */}
       <Address />
       <Contact />
     </main>
