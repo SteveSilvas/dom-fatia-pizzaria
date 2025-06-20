@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
             >
                 <Image
                     src={logotipo}
-                    alt="Vercel Logo"
+                    alt="Logotipo da DomFatia Pizzaria"
                     width={200}
                     height={200}
                     className={`h-40 md:h-15 w-auto mt-4 md:mt-0 ${!isOpen ? "hidden md:block" : ""}`}
